@@ -11,9 +11,23 @@ List of host/port pairs
 bootstrap.servers, "localhost:9091,localhost:9092"
 ```
 
-
-#### Serializers
-note
+Serializers
 - messages are collections of keys and values
 - kafka makes use of byte arrays
 - producer can use any java object for key and value
+
+  
+key.serializer and value.serializer
+- key.serializer: How to serialize the key
+- value.serializer: How to serialize the value
+- Can be different
+- Example:
+```
+"key.serializer":"org.apache.kafka.common.serialization.StringSerializer"
+```
+
+Additional Configurations
+- acks
+- buffer.memory
+- retries
+- batch.size
