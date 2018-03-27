@@ -58,3 +58,13 @@ Three methods to send messages
 - Simple send
 - Synchronous send
 - Asynchronous send
+
+Simple
+```
+ProducerRecord<String,String> record = new ProducerRecord<>();
+try {
+  producer.send(record).get();
+} catch(Exception e){
+  e.printStackTrace();
+}
+```
