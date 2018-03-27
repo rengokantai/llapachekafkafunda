@@ -47,3 +47,14 @@ acks settings
 - Medium throughput
 - Medium latency
 - Message loss rare
+###### all or -1
+- Low throughput
+- High latency
+- Message loss very rare
+
+
+### 3 Communicating with Kafka
+Three methods to send messages
+- Simple send
+- Synchronous send
+- Asynchronous send
