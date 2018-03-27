@@ -31,3 +31,19 @@ Additional Configurations
 - buffer.memory
 - retries
 - batch.size
+
+
+### 2 Constructing Producers
+Two key configurations affect batching
+- batch.size
+- linger.ms
+
+acks settings
+###### 0 
+- High throughput
+- Low latency
+- Message loss could occur
+###### 1
+- Medium throughput
+- Medium latency
+- Message loss rare
